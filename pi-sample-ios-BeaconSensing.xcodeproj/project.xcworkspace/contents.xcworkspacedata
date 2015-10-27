@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PIBeaconSDK.xcodeproj">
+      location = "self:/Users/udchoi/Documents/xcode/PIBeaconSDK/pi-sample-ios-BeaconSensing.xcodeproj">
    </FileRef>
 </Workspace>
