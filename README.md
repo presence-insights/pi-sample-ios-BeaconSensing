@@ -1,5 +1,5 @@
 #MobileFirst Platform - PI Beacon Sensing 
-The purpose of this app is to show how to implement PI SDK and use for Beacon sensing for IOS (Swift).
+The purpose of this app is to show how to leverage Presence Insights SDK and use for Beacon sensing for IOS (Swift).
 
 ##Instructions
 You would need to use a ios device to use Beacon SDK. Xcode simulator does not support beacons. 
