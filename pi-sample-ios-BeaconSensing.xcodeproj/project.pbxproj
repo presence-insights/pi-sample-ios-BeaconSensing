@@ -60,7 +60,7 @@
 			children = (
 				0F0D0DE41BDFE873004DC4F0 /* PresenceInsightsSDK.framework */,
 				0F13E2951B8789BA00D8F233 /* pi-sample-ios-BeaconSensing */,
-				0F13E2AB1B8789BA00D8F233 /* PIBeaconSDKTests */,
+				0F13E2AB1B8789BA00D8F233 /* pi-sample-ios-BeaconSensing */,
 				0F13E2941B8789BA00D8F233 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,8 +83,7 @@
 				0F13E2A11B8789BA00D8F233 /* LaunchScreen.xib */,
 				0F13E2961B8789BA00D8F233 /* Supporting Files */,
 			);
-			name = "pi-sample-ios-BeaconSensing";
-			path = PIBeaconSDK;
+			path = "pi-sample-ios-BeaconSensing";
 			sourceTree = "<group>";
 		};
 		0F13E2961B8789BA00D8F233 /* Supporting Files */ = {
@@ -95,13 +94,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0F13E2AB1B8789BA00D8F233 /* PIBeaconSDKTests */ = {
+		0F13E2AB1B8789BA00D8F233 /* pi-sample-ios-BeaconSensing */ = {
 			isa = PBXGroup;
 			children = (
 				0F13E2AE1B8789BA00D8F233 /* PIBeaconSDKTests.swift */,
 				0F13E2AC1B8789BA00D8F233 /* Supporting Files */,
 			);
-			path = PIBeaconSDKTests;
+			name = "pi-sample-ios-BeaconSensing";
+			path = "pi-sample-ios-BeaconSensingTest";
 			sourceTree = "<group>";
 		};
 		0F13E2AC1B8789BA00D8F233 /* Supporting Files */ = {
