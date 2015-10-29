@@ -26,12 +26,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, PIBeaconSenso
     //initializing the parameters (BM info)
     //initializing objects: PIBeaconSensor, PIAdapter, CLLocationmanger
     let locationManager = CLLocationManager()
-    let tenantID = "XXXXXXXXX"
-    let orgID = "XXXXXXXXX"
-    let username = "XXXXXXXXX"
-    let passwd = "XXXXXXXXX"
-    let siteID = "XXXXXXXXX"
-    let floorID = "XXXXXXXXX"
+    let tenantID = ""
+    let orgID = ""
+    let username = ""
+    let passwd = ""
+    let siteID = ""
+    let floorID = ""
+    let baseURL =  ""
     
 
     
@@ -44,8 +45,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, PIBeaconSenso
         //creating piAdapter with bm credentials/info
         piAdapter = PIAdapter(tenant: tenantID,
             org: orgID,
+            baseURL: baseURL,
             username: username,
             password: passwd)
+        //piAdapter.enableLogging()
         //creating piBeaconsensor with piAdapater that we created above
         piBeaconSensor = PIBeaconSensor(adapter: piAdapter)
         
