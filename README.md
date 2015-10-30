@@ -1,48 +1,37 @@
-#MobileFirst Platform - PI Beacon Sensing 
-The purpose of this app is to show how to leverage Presence Insights SDK and use for Beacon sensing for IOS (Swift).
+# IBM Presence Insights Beacon Sensing 
 
-##Instructions
-You would need to use a ios device to use Beacon SDK. Xcode simulator does not support beacons. 
+The purpose of this application is to show how to leverage the Presence Insights SDK for beacon sensing for IOS (Swift).
 
-* Open PIBeaconSDK.xcodeproj
-* Edit the file ViewController.swift
-	- change the bluemix credentials/information
-		- tenantID, orgID, siteID, floorID, username and password (all this information can be found in your Presence Insights Dashboard)
-* Make sure you select your ios device instead of the simulator
-* Click the play button to build and run
+You must use a IOS device to use a beacon SDK as the Xcode simulator does not support beacons. 
 
+1. Open PIBeaconSDK.xcodeproj.
+2. Edit the ViewController.swift file to update the Bluemix credentials, tenantID, orgID, siteID, floorID, username and password. Note that all of this information can be found in your Presence Insights Dashboard.
+3. Select your IOS device instead of the simulator.
+3. Click **Play** to build and run the application.
 
-##Quick Walkthrough
-ViewController.swift is a great way to see how objects were initialized and implemented.
+The ViewController.swift appliction is a great way to see how objects are initialized and implemented. The application will perform an initial check to see if the device is already registered. If the device is registered, it will alert the user and populate the device name and type.
 
-On the sample app, there are 4 buttons the user can press:
+The sample application contains the following fields and options:
 
-* "Start Sensing"
+* **Start Sensing**
 	- Device will start scanning for nearby beacons and if the beacon exist in the Presence Insights, it will send that location payload to Presence Insights.
-	- The app will alert the user stating it successfully started scanning.
-* "Get UUID for Beacons"
-	- Grabs all the UUIDs from the Presence Insights and pop up message listing them.
-* "Get Beacons on the Floor"
-	- The app will grab the beacons and alert the user number of beacons on the floor. 
-* "Stop Sensing"
-	- Device will stop scanning for beacons
-	- They app will alert the user stating it has successfully stopped the scanning.
+	- The application alerts the user stating it successfully started scanning.
+* **Get UUID for Beacons**
+	- Grabs all the UUIDs from the Presence Insights and list all pop up messages.
+* **Get Beacons on the Floor**
+	- The application grabs the beacons and alerts the user of the number of beacons on the floor. 
+* **Stop Sensing**
+	- Device stops scanning for beacons.
+	- The application alerts the user that it has successfully stopped scanning.
 	
-There is also another function you can implement that gets a list of CLBeacons detected by the locationManager. In this app, it currently just prints out to the console but can implement anything you would like in your app.
+There is also another function you can implement that gets a list of CLBeacons detected by the locationManager. This application prints out to the console but can implement anything you would like in your application.
 
 
 Copyright 2015 IBM Corp.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 
