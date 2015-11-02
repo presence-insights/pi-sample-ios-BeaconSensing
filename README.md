@@ -5,7 +5,7 @@ The purpose of this application is to show how to leverage the Presence Insights
 You must use a IOS device to use a beacon SDK as the Xcode simulator does not support beacons. 
 
 1. Open PIBeaconSDK.xcodeproj.
-2. Edit the ViewController.swift file to update the Bluemix credentials, tenantID, orgID, siteID, floorID, username and password. Note that all of this information can be found in your Presence Insights Dashboard.
+2. Edit the ViewController.swift file to update the Bluemix credentials, baseURL, tenantID, orgID, siteID, floorID, username and password. Note that all of this information can be found in your Presence Insights Dashboard.
 3. Select your IOS device instead of the simulator.
 3. Click **Play** to build and run the application.
 
